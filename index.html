@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fishing Map – Full Public App</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>Fishing Map – Full Public App</h1>
+  <p>Kompletní verze připravená pro nahrání do GitHubu.</p>
+
+  <h2>GPS Body</h2>
+  <pre id="gps"></pre>
+
+  <script src="data/gps.json"></script>
+  <script>
+    fetch('data/gps.json')
+      .then(r => r.json())
+      .then(d => document.getElementById('gps').textContent = JSON.stringify(d, null, 2));
+  </script>
+</body>
+</html>
