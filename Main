@@ -1,0 +1,8 @@
+{
+  "name": "Fishing Map",
+  "short_name": "FishingMap",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f6aff"
+}
